@@ -1,0 +1,24 @@
+.container {
+    width: 250px;
+   
+    border: 1px ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 3px 10px 38px 7px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 3px 10px 38px 7px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 10px 38px 7px rgba(0,0,0,0.75);
+  }
+  .img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+  .row3 {
+    display: flex;
+    align-items: center;
+  
+    gap: 10px;
+  }
+  

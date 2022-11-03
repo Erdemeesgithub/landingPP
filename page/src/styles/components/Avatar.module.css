@@ -1,0 +1,26 @@
+.img1{
+    width: 350px;
+    border-radius: 20px;
+}
+.container{
+ display: flex;
+flex-direction: column;
+padding: 20px;
+
+}
+.display{
+    width: 350px;
+    height: 410px;
+    box-shadow: 3px 10px 38px 7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 10px 38px 7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 10px 38px 7px rgba(0,0,0,0.75);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.information{
+    display: flex;
+    gap: 10px;
+
+
+}
