@@ -14,8 +14,7 @@ export const Avatar = () => {
         </p>
         <div className={styles.information}>
             <img src={image}></img>
-            <p>Jane Cooper</p>
-            <p>2nd January,2022</p>
+            <p>Jane Cooper  |  2nd January,2022</p>
         </div>
       </div>
     </div>

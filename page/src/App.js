@@ -11,8 +11,8 @@ function App() {
         <Route path="/Avatar" element={<Avatar/>}></Route>
         
     </Routes> */}
-      <Avatar />
-      <Review />
+      {/* <Avatar />
+      <Review /> */}
       {/* <Landing /> */}
 
       {/* </BrowserRouter> */}
