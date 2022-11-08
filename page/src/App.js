@@ -1,10 +1,12 @@
 import "./App.css";
 import { Review, Avatar, Landing, Page } from "./components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {ColorProvider, Context} from "./Context"
+import {ColorModeContext} from "react"
 
 function App() {
   return (
-    <div className="Container">
+    <ColorProvider>
       <Page />
       {/* <BrowserRouter>
     <Routes>
@@ -16,7 +18,7 @@ function App() {
       {/* <Landing /> */}
 
       {/* </BrowserRouter> */}
-    </div>
+    </ColorProvider>
   );
 }
 

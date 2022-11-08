@@ -9,10 +9,11 @@ import { BsSquareFill } from "react-icons/bs";
 import { AiFillInstagram } from "react-icons/ai";
 import { AiFillFacebook } from "react-icons/ai";
 import { AiFillTwitterCircle } from "react-icons/ai";
-
-
+import { useContext } from "react";
+import { ColorModeContext } from "../Context";
 
 export const Page = () => {
+  const color = useContext(ColorModeContext)
   const array = [0, 0, 0, 0, 0, 0, 0, 0, 0];
   return (
     <div className={styles.Container1}>
@@ -71,33 +72,45 @@ export const Page = () => {
             </div>
           </div>
           <div className={styles.Instagram}>
-            <AiFillInstagram></AiFillInstagram>
+            <AiFillInstagram  style={{ width: 30, height: 30 }}></AiFillInstagram>
             <h4>Instagram</h4>
           </div>
           <div className={styles.Instagram}>
-            <AiFillFacebook></AiFillFacebook>
+            <AiFillFacebook  style={{ width: 30, height: 30 }}></AiFillFacebook>
             <h4>Facebook</h4>
           </div>
           <div className={styles.Instagram}>
-            <AiFillTwitterCircle></AiFillTwitterCircle>
+            <AiFillTwitterCircle  style={{ width: 30, height: 30 }}></AiFillTwitterCircle>
             <h4>Twitter</h4>
           </div>
           <div className={styles.Instagram}>
-            <AiFillInstagram></AiFillInstagram>
+            <AiFillInstagram  style={{ width: 30, height: 30 }}></AiFillInstagram>
             <h4>Instagram</h4>
           </div>
           <div className={styles.Instagram}>
-            <AiFillFacebook></AiFillFacebook>
+            <AiFillFacebook  style={{ width: 30, height: 30 }}></AiFillFacebook>
             <h4>Facebook</h4>
           </div>
           <div className={styles.Instagram}>
-            <AiFillTwitterCircle></AiFillTwitterCircle>
+            <AiFillTwitterCircle
+              style={{ width: 30, height: 30 }}
+            ></AiFillTwitterCircle>
             <h4>Twitter</h4>
           </div>
           <div></div>
         </div>
         <div className={styles.footer2}>
-          <div className="use">Use Cases</div>
+          <div className={styles.footer2title}>
+            <h4>Use Cases</h4>
+          </div>
+          <div className={styles.footer2text}>
+            <h4>UI Design</h4>
+            <h4>UX Design</h4>
+            <h4>Prototyping</h4>
+            <h4>UI Design</h4>
+            <h4>UX Design</h4>
+            <h4>Prototyping</h4>
+          </div>
         </div>
         <div className={styles.footer3}></div>
         <div className={styles.footer4}></div>

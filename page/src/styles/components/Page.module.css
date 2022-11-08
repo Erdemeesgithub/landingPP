@@ -70,6 +70,7 @@
     height: 400px;
     background-color: #252B3B;
     display: flex;
+
 }
 .team{
     display: flex;
@@ -89,6 +90,22 @@
     width: 100px;
     height: 100px;
 }
-.use{
-    color: white;
+.footer2title{
+  color: white;
+  margin-bottom: 30px;
+
+}
+.footer2{
+  margin-top: 15px;
+  margin-left: 100px;
+}
+.footer2text{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+.footer1{
+  margin-left: 100px;
 }
