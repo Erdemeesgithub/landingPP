@@ -1,6 +1,13 @@
 .Container{
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items:center;
-
+}
+.header{
+    background-image: url(../../assets/girl.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
 }

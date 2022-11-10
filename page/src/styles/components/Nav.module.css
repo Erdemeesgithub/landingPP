@@ -1,0 +1,16 @@
+.Container{
+    display: flex;
+    /* justify-content:space-around ; */
+}
+.logo{
+    display: flex;
+}
+.logo > div{
+    margin-top: 17px;
+    color: #0BBEF2;
+}
+.link{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
