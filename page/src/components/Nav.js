@@ -1,7 +1,7 @@
 import styles from "../styles/components/Nav.module.css";
 import { BsSquareFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import { Button } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 
 export const Nav = () => {
   const routes = [
@@ -11,23 +11,25 @@ export const Nav = () => {
   ];
   return (
     <>
-      <div className={styles.Container}>
-        <div className={styles.logo}>
-          <h1>Team</h1>
-          <div>
-            <BsSquareFill></BsSquareFill>
+        <Container>
+            <div className={styles.Navbar}>
+          <div className={styles.logo}>
+            <h1>Team</h1>
+            <div>
+              <BsSquareFill></BsSquareFill>
+            </div>
           </div>
-        </div>
-        <div className={styles.link}>
-          {routes.map(({ name, to }) => (
-            <Link key={name} to={to}>
-              {name}
-            </Link>
-          ))}
-        </div>
-        <Button variant="outline-primary">Get Access</Button>
-      </div>
-      <hr></hr>
+          <div className={styles.link}>
+            {routes.map(({ name, to }) => (
+              <Link key={name} to={to}>
+                {name}
+              </Link>
+            ))}
+            <Button variant="outline-primary">Get Access</Button>
+          </div>
+          
+          </div>
+        </Container>
     </>
   );
 };
