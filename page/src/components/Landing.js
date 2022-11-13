@@ -28,8 +28,19 @@ export const Landing = () => {
   return (
     <div className={styles.Container}>
       <div className={styles.header}>
-        <div></div>
-        <div>HEllo</div>
+        <div>
+        <p className={styles.headerTitle}>
+              Instant collaborations for remote teams
+            </p>
+            <h4 className={styles.headerText}>
+              All in one for your remote team chats, collaboration and track
+              projects
+            </h4>
+          </div>
+          <div className={styles.headerButton}>
+            <input placeholder="Email" className={styles.input1}></input>
+            <button className={styles.button1}>Get early access</button>
+        </div>
       </div>
       <div className={styles.postPage1}>
         <div className={styles.postPage1div}>
