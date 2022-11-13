@@ -29,6 +29,7 @@ export const Landing = () => {
     <div className={styles.Container}>
       <div className={styles.header}>
         <div></div>
+        <div>HEllo</div>
       </div>
       <div className={styles.postPage1}>
         <div className={styles.postPage1div}>
