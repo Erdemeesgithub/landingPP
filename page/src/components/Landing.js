@@ -7,6 +7,9 @@ import event from "../assets/event.png";
 import group from "../assets/Group.png";
 import { useEffect } from "react";
 import axios from "axios";
+import event2 from "../assets/event2.png";
+import event3 from "../assets/event.png";
+import MaskGroup from "../assets/MaskGroup.png";
 
 const BaseUrl = "https://dummyapi.io/data/v1/";
 
@@ -28,8 +31,9 @@ export const Landing = () => {
   return (
     <div className={styles.Container}>
       <div className={styles.header}>
-        <div>
-        <p className={styles.headerTitle}>
+        <div className={styles.header1}>
+          <div>
+            <p className={styles.headerTitle}>
               Instant collaborations for remote teams
             </p>
             <h4 className={styles.headerText}>
@@ -40,6 +44,7 @@ export const Landing = () => {
           <div className={styles.headerButton}>
             <input placeholder="Email" className={styles.input1}></input>
             <button className={styles.button1}>Get early access</button>
+          </div>
         </div>
       </div>
       <div className={styles.postPage1}>
@@ -60,7 +65,23 @@ export const Landing = () => {
           <img className={styles.group} src={group}></img>
         </div>
       </div>
-      <div className={styles.postPage2}></div>
+      <div className={styles.postPage2}>
+        <div>
+          <img className={styles.Maskgroup} src={MaskGroup}></img>
+          <img className={styles.event2} src={event2}></img>
+          <img className={styles.event3} src={event3}></img>
+        </div>
+        <div className={styles.postPage2div}>
+          <p className={styles.text2}>Simple task management</p>
+          <p className={styles.text3}>
+            Give everyone you work with—inside and outside your company—a more
+            productive way to stay in sync. Respond faster with emoji, keep
+            conversations focused in channels, and simplify all your
+            communication into one place.
+          </p>
+          <Link>Learn more</Link>
+        </div>
+      </div>
       <div className={styles.postPage3}></div>
       <div className={styles.aboutUs}></div>
       <div className={styles.footer}></div>

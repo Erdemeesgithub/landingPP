@@ -39,13 +39,75 @@
   left: 1800px;
   top: 1080px;
 }
-.event{
+.event {
   position: absolute;
   left: 1250px;
   top: 1150px;
 }
-.group{
-    position: absolute;
-    left: 1350px;
-    top: 1600px;
+.group {
+  position: absolute;
+  left: 1350px;
+  top: 1600px;
+}
+.headerTitle {
+  font-size: 60px;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.headerText {
+  color: white;
+}
+.input1 {
+  background-color: white;
+  width: 300px;
+  height: 50px;
+  border: 1px solid #0bbef2;
+}
+.button1 {
+  background-color: #0bbef2;
+  width: 150px;
+  height: 50px;
+  color: white;
+  border: 1px solid #0bbef2;
+}
+.headerButton {
+  display: flex;
+  gap: 20px;
+}
+.header1 {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  margin-top: 300px;
+  margin-left: 300px;
+}
+.header1 > div {
+  margin-bottom: 50px;
+}
+.postPage2div {
+  width: 550px;
+  margin-right: 300px;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Maskgroup {
+  width: 700px;
+}
+.event2 {
+  position: absolute;
+  top: 2180px;
+  left: 420px;
+}
+.event3 {
+  position: absolute;
+  top: 2000px;
+  left: 390px;
+}
+.postPage2 {
+  display: flex;
+  gap: 300px;
+  margin-top: 100px;
+
 }
