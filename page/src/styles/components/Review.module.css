@@ -1,24 +1,61 @@
-.container {
-    width: 250px;
-   
-    border: 1px ;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    box-shadow: 3px 10px 38px 7px rgba(0,0,0,0.75);
-  -webkit-box-shadow: 3px 10px 38px 7px rgba(0,0,0,0.75);
-  -moz-box-shadow: 3px 10px 38px 7px rgba(0,0,0,0.75);
-  }
-  .img {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-  }
-  .row3 {
-    display: flex;
-    align-items: center;
-  
-    gap: 10px;
-  }
-  
+.Container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.title{
+  font-size: 50px;
+  font-family: Arial Black;
+}
+.titleArea{
+ width: 800px;
+ gap: 50px;
+}
+.titleArea > div{
+  display: flex;
+  gap: 20px;
+  color: gray;
+}
+.essay{
+  width: 800px;
+}
+.comment{
+  display: flex;
+  gap: 20px;
+  margin-right: 500px;
+}
+.image{
+  width: 60px;
+  height: 60px;
+}
+.name{
+  font-size: 25px;
+}
+.CEO{
+  color: gray;
+}
+.hr{
+  width: 800px;
+  border-top: 1px solid #DFE2E5;
+}
+.input{
+  width: 500px;
+  height: 150px;
+  border: 1px solid #BBC8D4;
+}
+.join{
+  font-size: 25px;
+  color: gray;
+}
+.comment1{
+  display: flex;
+  gap: 50px;
+}
+.avatar1{
+  width: 60px;
+  height: 60px;
+}
+.comSec{
+  margin-bottom: 150px;
+}

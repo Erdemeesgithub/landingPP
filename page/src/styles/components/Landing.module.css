@@ -116,8 +116,41 @@
   margin-top: 100px;
   margin-bottom: 100px;
 }
-.Group18{
+.Group18 {
   position: absolute;
   top: 2800px;
   left: 1190px;
 }
+.container11 {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.sectionTwo {
+  overflow: scroll;
+}
+.cards {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.cards > div {
+  display: flex;
+}
+.Amy{
+  display: flex;
+  gap: 10px;
+}
+.text22{
+  font-size: 20px;
+  width: 300px;
+}
+.title1{
+  font-size: 60px;
+  font-family: Arial Black;
+  display: flex;
+  justify-content: center;
+}
+

@@ -12,10 +12,16 @@ import event3 from "../assets/event.png";
 import MaskGroup from "../assets/MaskGroup.png";
 import Group18 from "../assets/Group18.png";
 import MaskGroup2 from "../assets/MaskGroup2.png";
+import { FaStar } from "react-icons/fa";
+import Any from "../assets/Ellipse.png";
+import { Button, Card, Container, Spinner } from "react-bootstrap";
 
 const BaseUrl = "https://dummyapi.io/data/v1/";
 
 export const Landing = () => {
+  const [pos, setPos] = useState(0);
+  const goRight = () => setPos((prev) => prev + 1);
+  const goLeft = () => setPos((prev) => prev - 1);
   useEffect(() => {
     axios
       .get(BaseUrl + "user", {
@@ -100,8 +106,54 @@ export const Landing = () => {
           <img src={MaskGroup2}></img>
         </div>
       </div>
-      <div className={styles.aboutUs}></div>
-      <div className={styles.footer}></div>
+      <div className={styles.aboutUs}>
+      <div className={styles.title1}>What people say about us</div>
+        <div className={styles.sectionTwo}>
+          <Container>
+            <div className={styles.cards}>
+              <div
+                style={{
+                  transform: `translateX(${-10 * pos}%)`,
+                  transition: "300ms",
+                }}
+              >
+                {new Array(10).fill(0).map((_, index) => (
+                  <Item
+                    index={index}
+                    text="Give everyone you work with—inside and outside your emoji, keep conversations focused in channels, and simplify all your communication into one place."
+                    Name="Amy Klassen"
+                  />
+                ))}
+              </div>
+            </div>
+            <Button onClick={goLeft}>Left</Button>
+            <Button onClick={goRight}>Right</Button>
+          </Container>
+        </div>
+      </div>
     </div>
+  );
+};
+
+const Item = (props) => {
+  return (
+    <Card style={{ width: 400,height:400, marginRight: 16 }}>
+      <Card.Body>
+        <div className={styles.container11}>
+        <div className={styles.row1}>
+          <FaStar color="#FFBB00" size={30} />
+          <FaStar color="#FFBB00" size={30}/>
+          <FaStar color="#FFBB00" size={30}/>
+          <FaStar color="#FFBB00" size={30}/>
+        </div>
+
+        <Card.Text className={styles.text22}>{props.text}</Card.Text>
+        <div className={styles.Amy}>
+          <img src={Any}></img>
+        <Card.Title>{props.Name}</Card.Title>
+        </div>
+        </div>
+      </Card.Body>
+    </Card>
   );
 };
