@@ -10,6 +10,8 @@ import axios from "axios";
 import event2 from "../assets/event2.png";
 import event3 from "../assets/event.png";
 import MaskGroup from "../assets/MaskGroup.png";
+import Group18 from "../assets/Group18.png";
+import MaskGroup2 from "../assets/MaskGroup2.png";
 
 const BaseUrl = "https://dummyapi.io/data/v1/";
 
@@ -82,7 +84,22 @@ export const Landing = () => {
           <Link>Learn more</Link>
         </div>
       </div>
-      <div className={styles.postPage3}></div>
+      <div className={styles.postPage3}>
+        <div className={styles.postPage1div}>
+          <p className={styles.text2}>Scheduling that actually works</p>
+          <p className={styles.text3}>
+            Give everyone you work with—inside and outside your company—a more
+            productive way to stay in sync. Respond faster with emoji, keep
+            conversations focused in channels, and simplify all your
+            communication into one place.
+          </p>
+          <Link>Learn More</Link>
+        </div>
+        <div>
+          <img className={styles.Group18} src={Group18}></img>
+          <img src={MaskGroup2}></img>
+        </div>
+      </div>
       <div className={styles.aboutUs}></div>
       <div className={styles.footer}></div>
     </div>
