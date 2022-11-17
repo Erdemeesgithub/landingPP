@@ -2,6 +2,8 @@ import styles from "../styles/components/Nav.module.css";
 import { BsSquareFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { Button, Container } from "react-bootstrap";
+import { useContext } from "react";
+import { ThemeContext } from "./ThemeProvider";
 
 export const Nav = () => {
   const routes = [
@@ -9,10 +11,12 @@ export const Nav = () => {
     { name: "Services", to: "Page" },
     { name: "Contacts", to: "Review" },
   ];
+
+  const { isDark, toggleTheme } = useContext(ThemeContext);
   return (
-    <>
-        <Container>
-            <div className={styles.Navbar}>
+    <div style={isDark ? { background: "#000", color: "#fff" } : {}}>
+      <Container >
+        <div className={styles.Navbar}>
           <div className={styles.logo}>
             <h1>Team</h1>
             <div>
@@ -20,16 +24,19 @@ export const Nav = () => {
             </div>
           </div>
           <div className={styles.link}>
+            <div></div>
             {routes.map(({ name, to }) => (
-              <Link key={name} to={to}>
+              <Link className={styles.link2} 
+               key={name} to={to}>
                 {name}
               </Link>
             ))}
-            <Button variant="outline-primary">Get Access</Button>
+            <div>
+              <button className={styles.dark} onClick={toggleTheme}>DarkMode</button>
+            </div>
           </div>
-          
-          </div>
-        </Container>
-    </>
+        </div>
+      </Container>
+    </div>
   );
 };

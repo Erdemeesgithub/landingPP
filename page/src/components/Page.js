@@ -5,10 +5,12 @@ import { ColorModeContext } from "../Context";
 import { useState, useEffect } from "react";
 import { Card, Spinner } from "react-bootstrap";
 import axios from "axios";
+import { ThemeContext } from "./ThemeProvider";
 
 const baseUrl = "https://dummyapi.io/data/v1/";
 
 export const Page = () => {
+  const { isDark } = useContext(ThemeContext);
   const color = useContext(ColorModeContext);
   // const array = [0, 0, 0, 0, 0, 0, 0, 0, 0];
   const [data, setData] = useState(null);
@@ -30,16 +32,24 @@ export const Page = () => {
   }, []);
 
   return (
-    <div className={styles.Container1}>
+    <div
+      className={styles.Container1}
+      style={{
+        background: isDark ? "#000" : "#fff",
+      }}
+    >
       <div className={styles.All}>
         <div className={styles.Texts}>
-          <h1>Blog Posts</h1>
-          <p className={styles.Textss}>
+          <h1 style={{ color: isDark ? "#fff" : "#000" }}>Blog Posts</h1>
+          <p
+            className={styles.Textss}
+            style={{ color: isDark ? "#fff" : "#000" }}
+          >
             Our latest updates and blogs about managing your team
           </p>
           <div className={styles.AllCard}>
             {!data && <Spinner animation="border" role="status"></Spinner>}
-            {data && data.data.map((item) => <Item {...item} className></Item>)}
+            {data && data.data.map((item) => <Item {...item}></Item>)}
           </div>
         </div>
       </div>

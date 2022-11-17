@@ -1,11 +1,20 @@
 import styles from "../styles/components/Review.module.css";
 import avatar from "../assets/Avatar.png";
 import image from "../assets/Image.png";
-import avatar1 from "../assets/Avatar1.png"
+import avatar1 from "../assets/Avatar1.png";
+import { ThemeContext } from "./ThemeProvider";
+import { useContext } from "react";
 
 export const Review = () => {
+  const { isDark } = useContext(ThemeContext);
   return (
-    <div className={styles.Container}>
+    <div
+      className={styles.Container}
+      style={{
+        background: isDark ? "#000" : "#fff",
+        color: isDark ? "#fff" : "#000",
+      }}
+    >
       <div className={styles.titleArea}>
         <p className={styles.title}>10 Secrets for managing a remote team </p>
         <div>

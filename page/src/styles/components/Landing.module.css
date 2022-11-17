@@ -16,7 +16,6 @@
 }
 .postPage1div {
   width: 550px;
-  margin-left: 300px;
   margin-top: 150px;
   display: flex;
   flex-direction: column;
@@ -30,23 +29,23 @@
   font-size: 20px;
 }
 .meet {
-  margin-left: 355px;
+  margin-top: 50px;
 }
 .icon {
   width: 200px;
   height: 200px;
   position: absolute;
-  left: 1800px;
-  top: 1080px;
+  left: 1600px;
+  top: 1180px;
 }
 .event {
   position: absolute;
-  left: 1250px;
+  left: 850px;
   top: 1150px;
 }
 .group {
   position: absolute;
-  left: 1350px;
+  left: 950px;
   top: 1600px;
 }
 .headerTitle {
@@ -85,8 +84,6 @@
   margin-bottom: 50px;
 }
 .postPage2div {
-  width: 550px;
-  margin-right: 300px;
   margin-top: 150px;
   display: flex;
   flex-direction: column;
@@ -95,15 +92,19 @@
 .Maskgroup {
   width: 700px;
 }
+.MaskGroup2{
+  /* width: 700px; */
+
+}
 .event2 {
   position: absolute;
-  top: 2180px;
-  left: 420px;
+  top: 2080px;
+  left: 780px;
 }
 .event3 {
   position: absolute;
-  top: 2000px;
-  left: 390px;
+  top: 2200px;
+  left: 750px;
 }
 .postPage2 {
   display: flex;
@@ -112,14 +113,14 @@
 }
 .postPage3 {
   display: flex;
-  gap: 300px;
+  gap: 200px;
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 .Group18 {
   position: absolute;
-  top: 2800px;
-  left: 1190px;
+  top: 2900px;
+  left: 1150px;
 }
 .container11 {
   width: 250px;
@@ -128,9 +129,9 @@
   gap: 20px;
   padding: 20px;
 }
-.sectionTwo {
+/* .sectionTwo {
   overflow: scroll;
-}
+} */
 .cards {
   height: 100vh;
   display: flex;
@@ -152,5 +153,51 @@
   font-family: Arial Black;
   display: flex;
   justify-content: center;
+}
+.btn9{
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+.button86 {
+  width: 80px;
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button86:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button86:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
 
