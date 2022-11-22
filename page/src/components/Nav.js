@@ -1,7 +1,7 @@
 import styles from "../styles/components/Nav.module.css";
 import { BsSquareFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import { Button, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { useContext } from "react";
 import { ThemeContext } from "./ThemeProvider";
 
@@ -24,7 +24,6 @@ export const Nav = () => {
             </div>
           </div>
           <div className={styles.link}>
-            <div></div>
             {routes.map(({ name, to }) => (
               <Link className={styles.link2} 
                key={name} to={to}>

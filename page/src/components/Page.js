@@ -1,7 +1,6 @@
 import styles from "../styles/components/Page.module.css";
 import image from "../assets/Ellipse.png";
 import { useContext } from "react";
-import { ColorModeContext } from "../Context";
 import { useState, useEffect } from "react";
 import { Card, Spinner } from "react-bootstrap";
 import axios from "axios";
@@ -11,7 +10,6 @@ const baseUrl = "https://dummyapi.io/data/v1/";
 
 export const Page = () => {
   const { isDark } = useContext(ThemeContext);
-  const color = useContext(ColorModeContext);
   // const array = [0, 0, 0, 0, 0, 0, 0, 0, 0];
   const [data, setData] = useState(null);
 
@@ -47,8 +45,12 @@ export const Page = () => {
           >
             Our latest updates and blogs about managing your team
           </p>
+          {!data && (
+            <div className={styles.spinner}>
+              <Spinner animation="border" role="status"></Spinner>
+            </div>
+          )}
           <div className={styles.AllCard}>
-            {!data && <Spinner animation="border" role="status"></Spinner>}
             {data && data.data.map((item) => <Item {...item}></Item>)}
           </div>
         </div>

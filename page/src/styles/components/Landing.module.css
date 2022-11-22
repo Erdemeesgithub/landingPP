@@ -92,10 +92,6 @@
 .Maskgroup {
   width: 700px;
 }
-.MaskGroup2{
-  /* width: 700px; */
-
-}
 .event2 {
   position: absolute;
   top: 2080px;
@@ -140,21 +136,21 @@
 .cards > div {
   display: flex;
 }
-.Amy{
+.Amy {
   display: flex;
   gap: 10px;
 }
-.text22{
+.text22 {
   font-size: 20px;
   width: 300px;
 }
-.title1{
+.title1 {
   font-size: 60px;
   font-family: Arial Black;
   display: flex;
   justify-content: center;
 }
-.btn9{
+.btn9 {
   display: flex;
   justify-content: flex-end;
   gap: 30px;
@@ -171,7 +167,7 @@
   border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
   border-style: solid;
   border-width: 2px;
-  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
   box-sizing: border-box;
   color: #41403e;
   cursor: pointer;
@@ -180,7 +176,7 @@
   font-size: 1rem;
   line-height: 23px;
   outline: none;
-  padding: .75rem;
+  padding: 0.75rem;
   text-decoration: none;
   transition: all 235ms ease-in-out;
   border-bottom-left-radius: 15px 255px;
@@ -193,11 +189,55 @@
 }
 
 .button86:hover {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
   transform: translate3d(0, 2px, 0);
 }
 
 .button86:focus {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
 }
+.Maskgroup {
+  background-image: url("./../../assets/MaskGroup.png");
+  width: 500px;
+  height: 500px;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 576px) {
+  .icon {
+    display: none;
+  }
+  .event {
+    display: none;
+  }
+  .group {
+    display: none;
+  }
+  .event2 {
+    display: none;
+  }
+  .event3 {
+    display: none;
+  }
+  .Group18 {
+    display: none;
+  }
+  .Maskgroup {
+    width: 100%;
+  }
+  .header1 {
+    margin-left: 0px;
+    margin-top: 200px;
+    width: 100%;
+  }
+  .postPage2 {
+    display: block;
+  }
+  .Maskgroup{
+    width: 400px;
+    height: 400px;
+  }
+  .text2{
+    font-size: 50px;
+  }
 
+}

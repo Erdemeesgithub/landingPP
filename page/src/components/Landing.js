@@ -92,8 +92,10 @@ export const Landing = () => {
         </div>
         <div className={styles.postPage2}>
           <div>
-            <img className={styles.Maskgroup} src={MaskGroup}></img>
-            <img className={styles.event2} src={event2}></img>
+            <img className={styles.Maskgroup} 
+            // src={MaskGroup}
+            ></img>
+            <div className={styles.event2} src={event2}></div>
             <img className={styles.event3} src={event3}></img>
           </div>
           <div className={styles.postPage2div}>
@@ -166,7 +168,7 @@ export const Landing = () => {
 
 const Item = (props) => {
   return (
-    <Card style={{ width: 400, height: 400, marginRight: 16 }}>
+    <Card style={{ width: 310, height: 400, marginRight: 16 }}>
       <Card.Body>
         <div className={styles.container11}>
           <div className={styles.row1}>

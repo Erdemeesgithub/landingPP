@@ -37,7 +37,7 @@
   margin: 0;
   outline: none;
   overflow: hidden;
-  padding: 0 32px;
+  padding: 0 10px;
   text-align: center;
   text-decoration: none;
   transform: translate3d(0, 0, 0);
@@ -70,4 +70,15 @@
 .link2 {
   text-decoration: none;
   color: gray;
+}
+.link2:hover{
+  font-size: 25px;
+  transition: 500ms;
+  color: chocolate;
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+@media only screen and (max-width: 576px) {
+  .logo{
+    display: none;
+  }
 }
