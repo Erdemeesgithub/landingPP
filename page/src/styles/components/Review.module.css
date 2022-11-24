@@ -59,3 +59,30 @@
 .comSec{
   margin-bottom: 150px;
 }
+@media only screen and (max-width: 576px) {
+  .image1{
+    width: 300px;
+    height: 150px;
+  }
+  .title{
+    font-size: 30px;
+  }
+  .titleArea{
+    width: fit-content;
+  }
+  .essay{
+    width: fit-content;
+  }
+  .comment{
+    margin-right: 0;
+  }
+  .join{
+    font-size: 15px;
+  }
+  .input{
+    width: fit-content;
+    height: fit-content;
+    
+  }
+  
+}

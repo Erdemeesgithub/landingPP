@@ -24,7 +24,7 @@ export const Review = () => {
           <p> 2nd January,2022</p>
         </div>
       </div>
-      <img src={image}></img>
+      <img src={image} className={styles.image1}></img>
       <div className={styles.essay}>
         <p>
           If you’re thinking of starting a blog of your own, but just don’t have

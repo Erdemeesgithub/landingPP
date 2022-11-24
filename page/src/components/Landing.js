@@ -9,12 +9,10 @@ import { useEffect } from "react";
 import axios from "axios";
 import event2 from "../assets/event2.png";
 import event3 from "../assets/event.png";
-import MaskGroup from "../assets/MaskGroup.png";
 import Group18 from "../assets/Group18.png";
-import MaskGroup2 from "../assets/MaskGroup2.png";
 import { FaStar } from "react-icons/fa";
 import Any from "../assets/Ellipse.png";
-import { Button, Card, Container, Spinner } from "react-bootstrap";
+import { Card, Container } from "react-bootstrap";
 import { ThemeContext } from "./ThemeProvider";
 
 const BaseUrl = "https://dummyapi.io/data/v1/";
@@ -122,7 +120,7 @@ export const Landing = () => {
           </div>
           <div>
             <img className={styles.Group18} src={Group18}></img>
-            <img src={MaskGroup2}></img>
+            <div className={styles.MaskGroup2}></div>
           </div>
         </div>
       </Container>

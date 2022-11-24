@@ -115,8 +115,8 @@
 }
 .Group18 {
   position: absolute;
-  top: 2900px;
-  left: 1150px;
+  top: 2800px;
+  left: 1200px;
 }
 .container11 {
   width: 250px;
@@ -125,9 +125,6 @@
   gap: 20px;
   padding: 20px;
 }
-/* .sectionTwo {
-  overflow: scroll;
-} */
 .cards {
   height: 100vh;
   display: flex;
@@ -202,6 +199,12 @@
   height: 500px;
   background-repeat: no-repeat;
 }
+.MaskGroup2 {
+  background-image: url("../../assets/MaskGroup2.png");
+  width: 500px;
+  height: 500px;
+  background-repeat: no-repeat;
+}
 @media only screen and (max-width: 576px) {
   .icon {
     display: none;
@@ -232,12 +235,33 @@
   .postPage2 {
     display: block;
   }
-  .Maskgroup{
-    width: 400px;
-    height: 400px;
+  .Maskgroup {
+  display: none;
   }
-  .text2{
-    font-size: 50px;
+  .text2 {
+    font-size: 30px;
   }
+  .postPage3 {
+    gap: 0;
+    margin-top: 0;
+  }
+  .text3 {
+    font-size: 15px;
+  }
+  .MaskGroup2 {
+    display: none;
+  }
+  .postPage2div{
+    margin-top: 0;
+  }
+  .meet{
+    display: none;
 
+  }
+  .postPage1{
+    gap: 0;
+  }
+  .title1{
+    font-family:Arial, Helvetica, sans-serif;
+  }
 }
